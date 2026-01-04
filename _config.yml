@@ -18,10 +18,10 @@ title: "Orange Labs"
 title_separator: "-"
 subtitle: "Tech Blog"
 name: "Orange Labs"
-description: "개발, 시스템 분석, 기술 혁신을 공유하는 Orange Labs 기술 블로그입니다."
+description: "OrangeLabs 기술 블로그입니다."
 url: "https://o5l3.github.io"
-baseurl: "/OrangeLabs_blog"
-repository: "o5l3/OrangeLabs_blog"
+baseurl: "/OrangeLabs_blogs"
+repository: "o5l3/OrangeLabs_blogs"
 
 # SEO Related
 # google_site_verification:
@@ -53,7 +53,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# 🧱 Defaults (레이아웃 및 사이드바 설정)
+#Defaults (레이아웃 및 사이드바 설정)
 defaults:
   # 1. 포스트(type: posts)에 대한 설정 (본문 페이지)
   - scope:
@@ -94,7 +94,7 @@ exclude:
 # 사이트 작성자 정보
 author:
   name: "Orange Labs"
-  avatar: "/OrangeLabs_blog/assets/images/Orange_logo.png"
+  #avatar: "/OrangeLabs_blog/assets/images/Orange_logo.png"
   bio: "Orange Labs Tech Blog"
   location: "Seoul, Korea"
   links:

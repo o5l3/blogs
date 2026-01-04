@@ -1,0 +1,103 @@
+# Jekyll 설정
+#
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Minimal Mistakes 테마 설정
+minimal_mistakes_skin: "default"
+# theme: "minimal-mistakes-jekyll"
+# remote_theme: "mmistakes/minimal-mistakes"
+
+# 사이트 필수 설정
+title: "Orange Labs"
+title_separator: "-"
+subtitle: "Tech Blog"
+name: "Orange Labs"
+description: "개발, 시스템 분석, 기술 혁신을 공유하는 Orange Labs 기술 블로그입니다."
+url: "https://o5l3.github.io"
+baseurl: "/OrangeLabs_blog"
+repository: "o5l3/OrangeLabs_blog"
+
+# SEO Related
+# google_site_verification:
+naver_site_verification:
+
+# Analytics
+analytics:
+  provider:
+  google:
+    tracking_id:
+
+# Site Footer
+footer:
+  links:
+    - label: "Notion"
+      icon: "fab fa-fw fa-twitter-notion"
+      url: "https://o5l3.notion.site/"
+  since: "2023"
+
+# Outputting
+permalink: /:categories/:title/
+timezone: "Asia/Seoul"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# 🧱 Defaults (레이아웃 및 사이드바 설정)
+defaults:
+  # 1. 포스트(type: posts)에 대한 설정 (본문 페이지)
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      sidebar: left # 포스트 본문 페이지에도 왼쪽 사이드바 적용
+
+  # ✅ 2. 모든 페이지(type: pages)에 대한 설정 (메인 페이지 포함)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: home # 사이드바 호환성이 높은 archive 레이아웃 사용 강제
+      sidebar: left # 왼쪽 사이드바 명시
+      entries_layout: grid # 포스트 목록을 카드형(grid)으로 변경
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+# 필요한 파일만 남기고 나머지 Exclude 항목은 모두 제거됨
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - Rakefile
+  - README.md
+
+# 사이트 작성자 정보
+author:
+  name: "Orange Labs"
+  avatar: "/OrangeLabs_blog/assets/images/Orange_logo.png"
+  bio: "Orange Labs Tech Blog"
+  location: "Seoul, Korea"
+  links:
+    - label: "Notion"
+      icon: "fas fa-fw fa-link"
+      url: "https://o5l3.notion.site/"

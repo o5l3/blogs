@@ -39,6 +39,9 @@ footer:
     - label: "Notion"
       icon: "fab fa-fw fa-twitter-notion"
       url: "https://o5l3.notion.site/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com/@orangelabs-u7q"
   since: "2023"
 
 # Outputting
@@ -101,3 +104,6 @@ author:
     - label: "Notion"
       icon: "fas fa-fw fa-link"
       url: "https://o5l3.notion.site/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://youtube.com/@orangelabs-u7q"

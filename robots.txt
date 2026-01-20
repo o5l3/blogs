@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://o5l3.github.io/OrangeLabs_blogs/sitemap.xml

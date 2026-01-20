@@ -85,7 +85,6 @@ include:
   - .htaccess
   - _pages
   - robots.txt
-  - sitemap.xml
 # 필요한 파일만 남기고 나머지 Exclude 항목은 모두 제거됨
 exclude:
   - vendor

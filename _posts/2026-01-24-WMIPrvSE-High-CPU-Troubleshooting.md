@@ -1,5 +1,5 @@
 ---
-title: "고객사 PC 성능 저하 사례 분석 보고서"
+title: "WMIPrvSE.exe 고CPU 사용 원인 추적 가이드"
 date: 2026-01-24T22:11:00+09:00
 categories: [Analysis,Development]
 tags: [Windows,WMIPrvSE.exe]
@@ -10,8 +10,6 @@ comments: true
 share: true
 related: true
 ---
-
-# WMIPrvSE.exe 고CPU 사용 원인 추적 가이드
 
 ## 개요
 

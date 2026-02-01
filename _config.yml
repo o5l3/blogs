@@ -20,7 +20,7 @@ subtitle: "Tech Blog"
 name: "Orange Labs"
 description: "OrangeLabs 기술 블로그입니다."
 url: "https://o5l3.github.io"
-baseurl: "/OrangeLabs_blogs"
+baseurl: "/blogs"
 repository: "o5l3/OrangeLabs_blogs"
 
 # SEO Related

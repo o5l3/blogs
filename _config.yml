@@ -14,14 +14,14 @@ minimal_mistakes_skin: "default"
 # remote_theme: "mmistakes/minimal-mistakes"
 
 # 사이트 필수 설정
-title: "Orange Labs"
+title: "오렌지랩스 기술블로그"
 title_separator: "-"
 subtitle: "Tech Blog"
-name: "Orange Labs"
-description: "OrangeLabs 기술 블로그입니다."
+name: "오렌지랩스(주)"
+description: "오렌지랩스 기술 블로그입니다."
 url: "https://o5l3.github.io"
 baseurl: "/blogs"
-repository: "o5l3/OrangeLabs_blogs"
+repository: "o5l3/blogs"
 
 # SEO Related
 # google_site_verification:

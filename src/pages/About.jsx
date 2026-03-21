@@ -89,33 +89,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Vision & Core Values */}
-      <section className="max-w-5xl mx-auto px-6 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              label: '고객 만족',
-              desc: '기술로 불편함을 해소하고 고객이 선택할 수밖에 없는 제품으로 최고 수준의 만족을 실현합니다.',
-            },
-            {
-              label: '동료 존중',
-              desc: '동료를 존중하고 서로의 가치를 인정하는 회사 문화를 구축합니다.',
-            },
-            {
-              label: '성과 보상',
-              desc: '구성원의 역량과 회사 가치 향상을 통한 최고 수준의 보상을 실현합니다.',
-            },
-          ].map((v, i) => (
-            <div key={i} className="bg-[#fafafa] rounded-2xl p-7 text-center">
-              <div className="w-10 h-10 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-extrabold">
-                {String(i + 1).padStart(2, '0')}
-              </div>
-              <h3 className="text-[15px] font-bold text-gray-900 mb-2">{v.label}</h3>
-              <p className="text-[13px] text-gray-500 leading-relaxed">{v.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Problem */}
       <section className="border-y border-gray-100 bg-[#fafafa]">

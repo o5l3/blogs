@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/blogs/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orange Labs Blog | 오렌지랩스</title>
+    <meta name="description" content="오렌지랩스 공식 블로그. 엔드포인트 성능 분석 리포트, 기술 인사이트, 회사 소식을 공유합니다." />
+    <meta name="keywords" content="오렌지랩스, Orange Labs, Orange Platform, 엔드포인트, 성능 모니터링, 장애 분석" />
+    <meta property="og:title" content="Orange Labs Blog" />
+    <meta property="og:description" content="탐지에서 예측까지, 엔드포인트의 모든 것. 오렌지랩스 공식 블로그." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://o5l3.github.io/blogs/" />
+    <meta name="google-site-verification" content="googledfcfb6bf9d23e39c" />
+    <!-- SPA redirect handler for GitHub Pages -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

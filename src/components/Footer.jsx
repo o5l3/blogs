@@ -38,8 +38,8 @@ export default function Footer() {
           <div className="md:col-span-4">
             <h4 className="text-[11px] text-gray-500 font-bold tracking-widest uppercase mb-4">Contact</h4>
             <ul className="space-y-2 text-[13px] text-gray-500">
-              <li>서울 강남구 테헤란로 625</li>
-              <li>덕흥빌딩 8층</li>
+              <li>서울 강남구 테헤란로 2길 27</li>
+              <li>패스트파이브 빌딩 8층</li>
               <li className="pt-2">
                 <a href="https://orangesys.co.kr/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-400 transition-colors text-[12px]">
                   (주)오렌지시스 ↗

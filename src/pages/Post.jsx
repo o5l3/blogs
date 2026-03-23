@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeRaw from 'rehype-raw'
-import { getPostById, categories } from '../data/posts'
+import { getPostById, getPostContent, categories } from '../data/posts'
 
 const categoryColors = {
   report: 'bg-blue-50 text-blue-600',
@@ -164,7 +164,7 @@ export default function Post() {
               ),
             }}
           >
-            {post.content}
+            {getPostContent(post.id)}
           </Markdown>
         </div>
 

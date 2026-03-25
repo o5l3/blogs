@@ -54,8 +54,6 @@ export default function About() {
     },
   ]
 
-  const B = import.meta.env.BASE_URL
-
   return (
     <div className="bg-white">
       {/* Hero */}
@@ -80,46 +78,21 @@ export default function About() {
         </div>
       </section>
 
-      {/* Story Link Card */}
-      <section className="max-w-5xl mx-auto px-6 py-16 md:py-20">
+      {/* Story Link */}
+      <section className="max-w-5xl mx-auto px-6 py-12">
         <Link
           to="/story"
-          className="group block bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 relative"
+          className="group flex items-center justify-between bg-[#fafafa] rounded-xl px-6 py-5 border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all"
         >
-          <div className="absolute inset-0 opacity-[0.03]" style={{
-            backgroundImage: 'linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px)',
-            backgroundSize: '40px 40px'
-          }} />
-          <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-orange-500/5 rounded-full blur-[80px]" />
-
-          <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-1">
-              <span className="text-xs text-orange-400 font-bold tracking-widest uppercase">Our Story</span>
-              <h3 className="text-xl md:text-2xl font-bold text-white mt-2 mb-3 group-hover:text-orange-300 transition-colors">
-                IT 관리자의 숨겨진 고민
-              </h3>
-              <p className="text-sm text-gray-400 leading-relaxed mb-4">
-                해킹보다 더 자주, 더 심각하게 발생하는 시스템 장애.
-                왜 우리가 이 문제를 풀기로 했는지, EDR 국내 1위를 만든 팀의 이야기.
-              </p>
-              <span className="text-sm text-orange-400 font-semibold inline-flex items-center gap-1.5 group-hover:translate-x-1 transition-transform">
-                스토리 읽기
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </span>
-            </div>
-            <div className="shrink-0 grid grid-cols-2 gap-3">
-              <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                <p className="text-2xl font-black text-orange-400">95%</p>
-                <p className="text-[11px] text-gray-500 mt-0.5">장애 비율</p>
-              </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                <p className="text-2xl font-black text-white">86%</p>
-                <p className="text-[11px] text-gray-500 mt-0.5">EDR 점유율</p>
-              </div>
-            </div>
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-orange-500 font-bold tracking-widest uppercase">Story</span>
+            <span className="text-[15px] font-bold text-gray-900 group-hover:text-orange-500 transition-colors">
+              IT 관리자의 숨겨진 고민
+            </span>
           </div>
+          <svg className="w-4 h-4 text-gray-300 group-hover:text-orange-400 group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
         </Link>
       </section>
 
@@ -134,9 +107,6 @@ export default function About() {
               합리적인 가격의 연간 구독 방식으로, 경량 구조를 통해 하드웨어 비용을 절감합니다.
             </p>
           </div>
-
-          {/* 동작 프로세스 이미지 */}
-          <img src={B + 'images/about/15.png'} alt="Orange Platform 동작 프로세스" className="w-full rounded-xl mb-10" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((s, i) => (
@@ -155,10 +125,6 @@ export default function About() {
             ))}
           </div>
 
-          {/* BSOD 분석 이미지 */}
-          <div className="mt-10">
-            <img src={B + 'images/about/14.png'} alt="장애 분석 상세 화면" className="w-full rounded-xl border border-white/10" />
-          </div>
         </div>
       </section>
 
@@ -277,7 +243,7 @@ export default function About() {
             <div className="bg-white rounded-2xl border border-gray-100 p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="flex items-center gap-1.5">
-                  <img src={B + 'images/symbol.png'} alt="" className="h-6 w-6" />
+                  <img src={import.meta.env.BASE_URL + 'images/symbol.png'} alt="" className="h-6 w-6" />
                   <span className="text-[14px] font-bold tracking-tight">
                     <span className="text-orange-500">Orange</span>
                     <span className="text-gray-400 font-medium"> labs</span>

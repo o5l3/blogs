@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Category from './pages/Category'
 import Post from './pages/Post'
 import About from './pages/About'
+import Story from './pages/Story'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -47,6 +48,7 @@ export default function App() {
             <Route path="/category/:id" element={<Category />} />
             <Route path="/post/:id" element={<Post />} />
             <Route path="/about" element={<About />} />
+            <Route path="/story" element={<Story />} />
           </Routes>
         </PageTransition>
       </main>

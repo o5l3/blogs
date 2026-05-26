@@ -83,7 +83,7 @@ Agent용 LiveCMD 권한 확인 엔드포인트를 신설하고, `feature_permiss
 기존엔 실시간 터미널 렌더링과 감사로그가 같은 토픽을 공유해 `dir` 명령 하나에 20~50개 noise 메시지가 쌓이고 입력/출력 연결도 불가능했다. `public/audit/live-response` 전용 토픽을 신설해 Agent가 정제된 페이로드(`action`·`manager_id`·`command`·`response` 등)를 발행, 동시에 동일 Agent에 여러 관리자가 LiveCMD를 동시 실행하면 한쪽 입력이 다른 쪽에 노출되던 보안 취약점을 세션 점유 모델로 차단.
 
 **매니저 웹 성능 개선 — nginx 캐시 정책 + 폰트 prefetch 중복 제거 (OR-1142)**.
-사내 192.168.0.35에서 재현된 느린 매니저 응답의 두 원인을 동시 해소. nginx `/manager` 전체에 걸려 있던 무차별 no-cache를 SPA 진입점·PACKAGE·SW·env 4곳만 no-cache로 좁히고 나머지(폰트/이미지/manifest)는 ETag 304 응답으로 정상화 — OR-1115 buildHash 메커니즘과도 정합. export 유틸이 3개 위젯에서 12MB 폰트를 각자 prefetch하던 중복도 공용 모듈로 통합해 제거.
+사내 한 서버에서 재현된 느린 매니저 응답의 두 원인을 동시 해소. nginx `/manager` 전체에 걸려 있던 무차별 no-cache를 SPA 진입점·PACKAGE·SW·env 4곳만 no-cache로 좁히고 나머지(폰트/이미지/manifest)는 ETag 304 응답으로 정상화 — OR-1115 buildHash 메커니즘과도 정합. export 유틸이 3개 위젯에서 12MB 폰트를 각자 prefetch하던 중복도 공용 모듈로 통합해 제거.
 
 **BSOD 분석기 마무리 — StackWalker pdb 다운로드 차단 + 콜스택 major 재배치 (OR-1310)** · **nodeInfo 위젯 종료 시 set.STATUS offline 미발송 — OR-1409 회귀 추적 (OR-1418)** · **LiveCMD @ 명령 간헐적 미인식 + 응답 UI 토스트 전환 (OR-1416)** · **패키지에서 p18(Agent UI) 제거 — c3 잔재 정리 (OR-1419)** · **Git·Jira 자동화 시스템 가동 (OR-984)** 등 5월 후반의 정밀 버그 추적도 같은 라인에서 진행.
 

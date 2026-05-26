@@ -15,6 +15,10 @@ const categoryHero = {
     subtitle: '엔드포인트 성능 분석과 Windows 트러블슈팅 기술 가이드',
     gradient: 'from-emerald-50/50 to-white',
   },
+  'dev-log': {
+    subtitle: '오렌지랩스 개발팀이 매일·매주 실제로 풀어낸 문제들의 기록',
+    gradient: 'from-violet-50/50 to-white',
+  },
   news: {
     subtitle: '오렌지랩스의 성장 이야기와 제품 업데이트 소식',
     gradient: 'from-orange-50/50 to-white',

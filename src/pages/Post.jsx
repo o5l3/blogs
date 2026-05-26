@@ -9,6 +9,7 @@ import { getPostById, getPostContent, posts, categories } from '../data/posts'
 const categoryColors = {
   report: 'bg-blue-50 text-blue-600',
   tech: 'bg-emerald-50 text-emerald-600',
+  'dev-log': 'bg-violet-50 text-violet-600',
   news: 'bg-orange-50 text-orange-600',
 }
 
@@ -306,9 +307,13 @@ export default function Post() {
           <p className="text-[11px] text-gray-400 font-bold tracking-widest uppercase mb-3">Tags</p>
           <div className="flex flex-wrap gap-2">
             {post.tags.map(tag => (
-              <span key={tag} className="text-[12px] text-gray-500 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
+              <Link
+                key={tag}
+                to={`/tag/${encodeURIComponent(tag)}`}
+                className="text-[12px] text-gray-500 bg-gray-50 hover:bg-violet-50 hover:text-violet-600 px-3 py-1.5 rounded-full border border-gray-100 hover:border-violet-200 transition-colors"
+              >
                 #{tag}
-              </span>
+              </Link>
             ))}
           </div>
         </div>

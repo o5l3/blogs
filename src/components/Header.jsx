@@ -5,6 +5,7 @@ import SearchModal from './SearchModal'
 const navItems = [
   { path: '/category/report', label: '리포트' },
   { path: '/category/tech', label: '기술' },
+  { path: '/category/dev-log', label: '개발로그' },
   { path: '/category/news', label: '소식' },
 ]
 

@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import Home from './pages/Home'
 import Category from './pages/Category'
+import Tag from './pages/Tag'
 import Post from './pages/Post'
 import About from './pages/About'
 import Story from './pages/Story'
@@ -46,6 +47,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/category/:id" element={<Category />} />
+            <Route path="/tag/:tag" element={<Tag />} />
             <Route path="/post/:id" element={<Post />} />
             <Route path="/about" element={<About />} />
             <Route path="/story" element={<Story />} />

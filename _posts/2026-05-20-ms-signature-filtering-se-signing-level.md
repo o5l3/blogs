@@ -3,7 +3,7 @@ title: "EPROCESS SignatureLevel은 왜 0인가 — Medium IL 프로세스의 MS 
 excerpt: "커널 드라이버에서 Microsoft 서명 프로세스를 필터링하려 SignatureLevel을 읽으면 code.exe·Teams.exe 같은 MS 서명 앱조차 0이 나옵니다. Windows 11 26100에서 신규 프로세스 86개를 실측해 확인한 SE_SIGNING_LEVEL과 Integrity Level의 상관관계, LoadImage 콜백·PsGetProcessSignatureLevel의 한계, 그리고 PE Authenticode에서 서명자 CN을 직접 추출하는 2단계 대안을 정리합니다."
 category: tech
 date: 2026-05-20
-author: Orange Labs
+author: wychoi-orangelabs
 tags: [Windows, 커널드라이버, 코드서명, Authenticode, SignatureLevel, 보안]
 ---
 

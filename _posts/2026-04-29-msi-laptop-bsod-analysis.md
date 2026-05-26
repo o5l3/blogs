@@ -3,7 +3,7 @@ title: "노트북 블루스크린 두 건의 진짜 원인 — Intel 이더넷 D
 excerpt: "같은 노트북에서 4시간 47분 간격으로 터진 두 종류의 블루스크린을 windbg로 끝까지 추적했습니다. 하나는 Intel NIC 드라이버(e1dnexpress.sys)의 D3 절전 전환 실패(DRIVER_POWER_STATE_FAILURE 0x9F), 다른 하나는 Windows 11 24H2의 WSL2 메모리 백킹(vmmemWSL) 커널 어서션(0x7E)이었습니다. !irp·lmvm 출력과 원인 판정 과정을 그대로 공개합니다."
 category: report
 date: 2026-04-29
-author: Orange Labs
+author: kim-tigerj
 tags: [블루스크린, BSOD, windbg, 드라이버, NetAdapterCx, WSL2, Windows11, Orange Platform]
 ---
 

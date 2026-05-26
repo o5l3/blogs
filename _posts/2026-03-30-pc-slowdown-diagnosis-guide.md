@@ -3,7 +3,7 @@ title: "PC 버벅임(느려짐) 현장 분석 가이드 — 원인 프로세스 
 excerpt: "특정 시간대에 반복되는 PC 느려짐을 현장에서 즉흥 판단하지 않고, 하루치 데이터를 모두 수집해 사후 분석하는 체계적 방법을 정리했습니다. CPU·메모리·디스크 I/O·GPU·네트워크·커널·파일시스템까지 의심 원인 전체 체크리스트와 식별 도구를 제시합니다."
 category: report
 date: 2026-03-30
-author: Orange Labs
+author: wychoi-orangelabs
 tags: [성능분석, 트러블슈팅, 드라이버, DPC, 미니필터, Orange Platform]
 ---
 

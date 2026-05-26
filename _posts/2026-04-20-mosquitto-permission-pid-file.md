@@ -3,7 +3,7 @@ title: "Mosquitto 2.0 'Unable to write pid file' 원인 — 권한 강등과 sys
 excerpt: "Mosquitto 2.0은 설정을 읽자마자 비특권 사용자로 권한을 낮춥니다. config에 user를 직접 지정했는데도 기동 시 'Unable to write pid file' 오류가 난다면, 설치 시 자동 생성된 systemd 유닛이 /run/mosquitto·/var/log/mosquitto 소유권을 mosquitto 사용자로 넘기기 때문입니다. 원인과 해결을 정리합니다."
 category: tech
 date: 2026-04-20
-author: Orange Labs
+author: SungWoo824
 tags: [Mosquitto, MQTT, systemd, Linux, 권한, 트러블슈팅]
 ---
 

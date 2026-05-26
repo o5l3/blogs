@@ -3,7 +3,7 @@ title: "어떤 프로세스가 내 프로그램을 죽였나 — ETW Kernel-Audi
 excerpt: "프로그램이 갑자기 종료될 때 '누가 죽였는지'를 알아내는 방법. Windows의 Microsoft-Windows-Kernel-Audit-API-Calls 프로바이더가 내보내는 TerminateProcess(Event 2)를 ETW 실시간 세션으로 구독해, 가해자(원인)·피해자(대상) 프로세스를 짝지어 식별하는 구현을 정리합니다."
 category: tech
 date: 2026-04-17
-author: Orange Labs
+author: kim-tigerj
 tags: [ETW, Windows, 커널, 프로세스, 트러블슈팅]
 ---
 

@@ -3,7 +3,7 @@ title: "백신(Symantec Endpoint Protection) 버전 업그레이드로 엔드포
 excerpt: "기업 PC의 고질적 CPU 점유 원인으로 지목되던 SEP(Symantec Endpoint Protection)를, 구버전과 신버전이 공존하는 49대 환경에서 2주간 실측 비교했습니다. ccSvcHst.exe의 CPU가 2.29%→0.65%(-71.5%)로 떨어지고, sysfer.dll이 OneDrive·Excel·Explorer 등에 주입되어 유발하던 부수 부하까지 줄어 SEP 관련 전체 영향이 43% 감소했습니다. 버전별 모듈 구조와 DLL 주입 분포를 표로 제시합니다."
 category: report
 date: 2025-07-11
-author: Orange Labs
+author: SungWoo824
 tags: [성능분석, 백신, Symantec, SEP, sysfer, CPU, DLL인젝션, Orange Platform]
 ---
 
